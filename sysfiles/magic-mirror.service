@@ -1,0 +1,21 @@
+#
+# MagicMirror systemd service
+#
+# Provides a systemd unit to keep the MM up and running
+#
+
+[Service]
+#ExecStart=/usr/bin/node server.js
+ExecStart=/usr/bin/npm start
+Restart=always
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=magic-mirror
+User=pi
+Group=pi
+Environment=NODE_ENV=production
+Environment=MAGIC_MIRROR_CONFIG=/etc/default/magic-mirror
+WorkingDirectory=/home/pi/MagicMirror
+
+[Install]
+WantedBy=multi-user.target

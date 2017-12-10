@@ -1,0 +1,18 @@
+
+RaspiMirror - A Raspbian Magic Mirror distro
+Changelog history
+
+v1.0 - December 10, 2017
+
+ * Automatically enabled PM2 on boot
+ * Hostname set to raspimirror
+ * Hide the blinking console cursor
+ * Added 3rd party modules https://github.com/MichMich/MagicMirror/wiki/MagicMirror
+ * Added automatic wireless configuration into /boot/wpa_supplicant.txt
+ * Added pipaOS software repository archive.mitako.eu
+ * Added version info file /boot/raspimagic.txt
+ * Enabled ssh access for remote setup
+ * Disabled wireless power safe mode
+ * Disabled the screensaver
+ * Added Unclutter to hide the mouse cursor
+ * Automated build based on Raspbian Stretch

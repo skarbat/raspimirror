@@ -1,0 +1,5 @@
+#
+# things to do when the X server stars up
+#
+
+unclutter -grab &
